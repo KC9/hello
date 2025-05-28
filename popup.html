@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Chrome Extension</title>
+  <script src="popup.js"></script>
+  <style>
+    body { font-family: sans-serif; width: 300px; }
+    #resultDiv { 
+      margin-top: 10px; 
+      border: 1px solid #ccc; 
+      padding: 10px; /* Increased padding */
+      min-height: 50px; 
+      max-height: 200px; /* Increased max-height */
+      overflow-y: auto; 
+      white-space: pre-wrap; /* Preserve line breaks */
+      word-wrap: break-word; /* Break long words */
+    }
+    .error { /* Style for error messages */
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Content Summarizer</h1>
+  <button id="summarizeButton">Summarize Page</button>
+  <div id="resultDiv">
+    <!-- Extracted content and summaries will appear here -->
+  </div>
+</body>
+</html>
